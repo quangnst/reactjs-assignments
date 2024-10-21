@@ -23,8 +23,8 @@ const useTodoStore = create<TodoStore>()(
   persist(
     (set, get) => ({
       todos: [],
-      filter: "All", // Thêm filter mặc định
-      setFilter: (filter: string) => set({ filter }), // Hàm thay đổi filter
+      filter: "All",
+      setFilter: (filter: string) => set({ filter }),
       addTodo: (text: string) =>
         set((state) => ({
           todos: [
